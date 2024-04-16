@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+
+        input, h1, li {
+            font-family: 'Wanted Sans';
+        }
+
+        input[type="text"]{
+            background-color: chartreuse;
+        }
+        input[type="password"]{
+            background-color: cornflowerblue;
+        }
+        h1::before{
+            content: "hello";
+        }
+
+        ul {
+            list-style-type: none;
+            text-decoration: none;
+            color: var(--color-black);
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        li {
+            margin-top: 10px;
+        }
+
+        ul > li:hover {
+            color: #f84821;
+        }
+
+        ul > li:hover::after {
+            content: '';
+
+            display: block;
+
+            width: 7px;
+            height: 7px;
+
+            border-radius: 100px;
+
+            margin: -13px 0 16px -20px;
+
+            background-color: #f84821;
+        }
+
+        #parent {
+            font-size: 80px;
+        }
+
+        #child {
+            font-size: 0.5em;
+        }
+
+        #grandchild {
+            font-size: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>index20240416.html</h1>
+    <form action="" method="get">
+        <label for="id">아이디</label>
+        <input type="text" name="" id="id"><br>
+        <label for="pw">비밀번호</label>
+        <input type="password" name="" id="pw"><br>
+    </form>
+    <ul>
+        <li value="1">item1</li>
+        <li value="2">item2</li>
+        <li value="3">item3</li>
+        <li value="4">item4</li>
+        <li value="5">item5</li>
+        <li value="6">item6</li>
+        <li value="7">item7</li>
+        <li value="8">item8</li>
+        <li value="9">item9</li>
+        <li value="10">item10</li>
+    </ul>
+    <h1>글꼴 크기 연습</h1>
+    <div id="parent">
+        부모 요소입니다
+        <div id="child">
+            자식요소입니다
+            <div id="grandchild">
+                손자요소입니다
+            </div>
+        </div>
+    </div>
+</body>
+</html>
